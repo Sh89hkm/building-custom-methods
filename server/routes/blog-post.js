@@ -9,8 +9,8 @@ router.get("/", blogPostController.getAllBlogPosts);
 
 router.post("/", blogPostController.addBlogPost);
 
-// router.get("/:id/similar-blogposts", blogPostController.getBlogPostsWithSimilarTags);
+router.get("/:id/similar-blogposts", blogPostController.getBlogPostsWithSimilarTags);
 
-// router.get("/:id/created-at-gmt", blogPostController.getCreatedAtTimeGMT);
+router.get("/:id/created-at-gmt", blogPostController.getCreatedAtTimeGMT);
 
 module.exports = router;
